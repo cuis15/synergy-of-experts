@@ -1,0 +1,24 @@
+python main.py \
+    --train_type "loss_base" \
+    --valid_type "loss_base" \
+    --batch_size 128 \
+    --attack_type "white_box" \
+    --gpu 0 \
+    --attack_eps  0.03 \
+    --num_workers 0 \
+    --depth 20 \
+    --target_dir "dir" \
+    --total_epoches 3 \
+    --num_experts 3 \
+    --plus_at_type "together" \
+    --ppd_type "simple" \
+    --subset_num  1000 \
+    --lr_expert 0.1 \
+    --adaptivetrainlambda 1.0 \
+    --wbox_type_pgd \
+    --optim_type "sgd" \
+    --test_interval_epoches 1 \
+    --save_interval_epoches 1 \
+    --attack_interval_epoches 1 \
+    --plus_at \
+    --eval_mode
